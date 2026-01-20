@@ -51,6 +51,19 @@ func main() {
 	fmt.Printf("Temp with 2 decimal places and 8 width %08.2f \n", temp)
 	fmt.Printf("Temp with 2 decimal places and 8 width %-8.2fcheck\n", temp)
 
-
 	
+	// Use of arguments postion
+	fmt.Printf("%[2]s is %.1[1]f years old\n", age, name)
+
+	// Sprintf returns the string instead of printing it
+	str := fmt.Sprintf("%f is my age", age)
+	fmt.Println(str)
+
+	// Why to use these functions instead of string concatenation ?
+	/*
+		String concatenation is handy when we have small number of sub strings but becomes really
+		complecated when it comes to huge paramters.
+		and when we need to concatenate different types better to use Sprintf because in concatenation
+		we will have to write a lot of extra code.
+	*/
 }
