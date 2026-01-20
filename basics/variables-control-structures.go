@@ -148,11 +148,102 @@ func Loops() {
 	/*
 		Break/Continue:
 			Break is used to break the loop, Continue is used to skip the iteration.
-		
+
 		Break outer:
 		It breaks both of the loops if loops are nested.
-		
+
 	*/
+
+}
+func Variables() {
+	/* All the types of the variables*/
+
+	// variable declerations
+	var x int
+	var name string
+
+	// Variable assignment
+	x = 30
+	name = "Abdul Ghaffar"
+
+	fmt.Println(name, x)
+
+	// Variable initialization
+	var y int = 2
+	fmt.Println(y)
+
+	// Type inference
+	var z = 20
+	fmt.Println(z)
+
+	// Short variable decleration | only allowed inside functions
+	a := 4
+	fmt.Println(a)
+
+	// 1. Basic (Primitive) Types
+	/*
+		Integers:
+		1. int  4 or 8 bytes depends upon system
+		2. int8	 8 bit
+		3. int16 16 bit
+		4. int32 32 bit
+		5. int64 64 bit
+		6. uint unsigned int
+		7. uint8 8 bit (alias is byte)
+		8. uint16 16 bit
+		9. uint32 32 bit
+		10. uint64 64 bit
+		11. uintptr Pointer-sized integer  
+
+		Floating point numbers:
+		1. float32
+		2. float64 64 bit default 
+
+		Complex numbers:
+		1. complex64
+		2. complex128
+
+		Boolean:
+		var x bool = true;
+
+		String:
+		var x string = "something"
+	*/
+
+
+	// 2. Composite Types:
+	// Composite types are built from other types
+
+	// 1. Arrays
+	var names [3]string = [3]string{"Ghaffar", "Ali", "Azlan"}
+	fmt.Println(names)
+
+	// 2. Slices
+	var ages []int = []int{20, 21, 22}
+	ages = append(ages, 30)
+	fmt.Println(ages)
+
+	// 3. Maps
+	var data map[string]int = map[string]int{"Ali": 3, "Ahmed": 5}
+	fmt.Printf("%+v \n", data)
+
+	// 4. Structs
+	type Person struct{
+		name string
+		age int
+	}
+	var p = Person{"Abdul Ghaffar", 20}
+	var u Person
+	fmt.Println(u)
+	fmt.Println(p)
+
+
+	// 3. Reference Types
+	num := 30
+	point := &num
+	fmt.Println(point)
+	fmt.Println(*point)  // Dereferencing
+
 
 }
 
@@ -222,4 +313,5 @@ func main() {
 
 	Conditionals()
 	Loops()
+	Variables()
 }
