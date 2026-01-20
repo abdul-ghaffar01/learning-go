@@ -193,11 +193,11 @@ func Variables() {
 		8. uint16 16 bit
 		9. uint32 32 bit
 		10. uint64 64 bit
-		11. uintptr Pointer-sized integer  
+		11. uintptr Pointer-sized integer
 
 		Floating point numbers:
 		1. float32
-		2. float64 64 bit default 
+		2. float64 64 bit default
 
 		Complex numbers:
 		1. complex64
@@ -209,7 +209,6 @@ func Variables() {
 		String:
 		var x string = "something"
 	*/
-
 
 	// 2. Composite Types:
 	// Composite types are built from other types
@@ -228,22 +227,20 @@ func Variables() {
 	fmt.Printf("%+v \n", data)
 
 	// 4. Structs
-	type Person struct{
+	type Person struct {
 		name string
-		age int
+		age  int
 	}
 	var p = Person{"Abdul Ghaffar", 20}
 	var u Person
 	fmt.Println(u)
 	fmt.Println(p)
 
-
 	// 3. Reference Types
 	num := 30
 	point := &num
 	fmt.Println(point)
-	fmt.Println(*point)  // Dereferencing
-
+	fmt.Println(*point) // Dereferencing
 
 }
 
@@ -314,4 +311,25 @@ func main() {
 	Conditionals()
 	Loops()
 	Variables()
+
+	// Functions
+	PrintPattern(5, 5)
+	total := sumAll(3, 4, 5, 6, 3, 54, 5, 1)
+	fmt.Println(total)
+
+
+	var fu func(int, int) int
+	fu = multiply
+	fmt.Println(fu(3,5))
+
+	// Anonymous Functions
+	func() {
+		fmt.Println("Anonymous function")
+	}()
+
+	// Closure 
+	c := counter()
+	fmt.Println(c())
+	fmt.Println(c())
+	fmt.Println(c())
 }
