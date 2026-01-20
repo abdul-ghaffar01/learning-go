@@ -82,8 +82,8 @@ func Conditionals() {
 	case score < 80:
 		fmt.Println("C")
 	}
-	
-	// fallthrough executes the next case without satisfying the condition 
+
+	// fallthrough executes the next case without satisfying the condition
 	switch x := 1; x {
 	case 1:
 		fmt.Println("One")
@@ -91,6 +91,68 @@ func Conditionals() {
 	case 2:
 		fmt.Println("Two")
 	}
+
+}
+
+func Loops() {
+	/*
+		Loop control structures:
+		Syntax:
+		for initialization/condition/incrementation{
+			code
+		}
+
+		It is the only loop in Go.
+	*/
+
+	// Simple for loop
+	for i := 0; i < 10; i++ {
+		fmt.Println("The value of i is: ", i)
+	}
+
+	// For loop as while
+	i := 0
+	for i < 10 {
+		fmt.Println("The value of i again is: ", i)
+		i++
+	}
+
+	// infinite for loop
+	// for {  // used in servers and workers
+	// 	fmt.Println("Infinity")
+	// }
+
+	// Looping through array/slice
+	nums := []int{10, 20, 30, 40}
+	for index, nums := range nums { // index or value can be ignored using _
+		fmt.Println(index, nums)
+	}
+
+	// Looping through map
+	m := map[string]int{"a": 1, "b": 2}
+	for key, value := range m {
+		fmt.Println(key, value)
+	}
+
+	// Looping through string
+	for i, char := range "string" {
+		/*
+			Range iterates over runes not bytes in a string.
+			Rune: It is the byte code for each character as some characters are of size from
+			1 - 4 bytes so prune helps decode correctly
+			type of rune is int32
+		*/
+		fmt.Printf("%d -> %c\n", i, char)
+	}
+
+	/*
+		Break/Continue:
+			Break is used to break the loop, Continue is used to skip the iteration.
+		
+		Break outer:
+		It breaks both of the loops if loops are nested.
+		
+	*/
 
 }
 
@@ -159,5 +221,5 @@ func main() {
 	*/
 
 	Conditionals()
-
+	Loops()
 }
