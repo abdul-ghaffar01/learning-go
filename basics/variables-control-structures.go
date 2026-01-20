@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	name := "Abdul Ghaffar"
-	age := 22
+	age := 22.4
 
 	// Print with new line
 	fmt.Println("Working just fine")
@@ -22,12 +22,35 @@ func main() {
 	
 	type Person struct{
 		name string
-		age int
+		age float64
 	};
 	p := Person{name, age}
 	// Can print any type String, int, array, slice, struct
 	fmt.Print("\nString", 22, [2]int{2, 3}, true, 3.2783, p, "\n")
 
 	// fomatting verbs
-	fmt.Printf("My name is %s, and I am %d years old.\n", name, age)
+	fmt.Printf("My name is %q, and I am %f years old.\n", name, age)
+
+	/*
+		%v for value
+		%#v for go-syntax value
+		%s for string
+		%d for int
+		%f for float
+		%q for quoted string
+		%T for type
+		%t for boolean
+		%x for hexadecimal
+		%p for pointer address
+	*/
+
+	// Formating floats
+	temp := 3443.2348
+
+	fmt.Printf("Temp with 2 decimal places %.2f\n", temp)
+	fmt.Printf("Temp with 2 decimal places and 8 width %08.2f \n", temp)
+	fmt.Printf("Temp with 2 decimal places and 8 width %-8.2fcheck\n", temp)
+
+
+	
 }
