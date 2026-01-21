@@ -332,4 +332,7 @@ func main() {
 	fmt.Println(c())
 	fmt.Println(c())
 	fmt.Println(c())
+
+	// structs and methods in go
+	structsAndMethods()
 }
