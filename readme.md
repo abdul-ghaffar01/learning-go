@@ -9,6 +9,7 @@ Contains all the basics of `Go`.
 - Control structures
 - Functions
 - Packages
+- Structs and Methods
 
 #### Learning is continuous, haven't completed yet
 [Visit Portfolio](https://iabdulghaffar.com)

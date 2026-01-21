@@ -335,4 +335,7 @@ func main() {
 
 	// structs and methods in go
 	structsAndMethods()
+
+	// Interface and polymorphisim
+	interfacesAndPolymorphism()
 }
