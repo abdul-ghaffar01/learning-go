@@ -11,5 +11,8 @@ Contains all the basics of `Go`.
 - Packages
 - Structs and Methods
 
+### 2. Concurrency
+- Goroutines
+
 #### Learning is continuous, haven't completed yet
 [Visit Portfolio](https://iabdulghaffar.com)
