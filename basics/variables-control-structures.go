@@ -338,4 +338,10 @@ func main() {
 
 	// Interface and polymorphisim
 	interfacesAndPolymorphism()
+
+	// Generics
+	Generics()
+
+	// Error Handling
+	ErrorHandling()
 }
