@@ -10,7 +10,7 @@ type User struct {
 
 func addUserController(users *[]User) error {
 	fmt.Println("Adding a new user")
-	newUser := User{"Abdul Ghaffar", 22, "Daharki"}
+	newUser := User{"Azlan Ali", 22, "Daharki"}
 	*users = append(*users, newUser)
 	fmt.Printf("User %v added as a new user\n", newUser.Name)
 	return nil
