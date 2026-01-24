@@ -22,5 +22,6 @@ func main() {
 	
 	// Channels: Communication between goroutines
 	Channels()
+	Contexts()
 
 }
