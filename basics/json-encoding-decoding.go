@@ -22,11 +22,28 @@ func encoding(u UserData){
 	fmt.Println("json data:", string(jsonData))
 
 	// Decoding the same data
-	decoding()
+	decoding(string(jsonData))
 }
 
-func decoding(){
-	
+func decoding(jsonInString string){
+	fmt.Println("Decoding the json-------------")
+
+	/*
+		Steps:
+			1) Convert string of json to slice of byte
+			2) 
+	*/
+
+	data := []byte(jsonInString)
+	var userDataInstruct UserData
+	err := json.Unmarshal(data, &userDataInstruct)
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println(userDataInstruct)
+
 }
 
 func JsonEncodingDecoding(){
