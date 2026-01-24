@@ -345,4 +345,6 @@ func main() {
 	// Error Handling
 	ErrorHandling()
 
+	// Json encoding/decoding
+	JsonEncodingDecoding()
 }
