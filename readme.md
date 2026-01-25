@@ -14,6 +14,7 @@ Contains all the basics of `Go`.
 ### 2. Concurrency
 - Goroutines
 - Channels (buffered/unbuffered)
+- Context
 
 #### Learning is continuous, haven't completed yet
 [Visit Portfolio](https://iabdulghaffar.com)

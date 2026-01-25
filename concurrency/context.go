@@ -43,4 +43,8 @@ func Contexts() {
 	fmt.Println("Data: ", data)
 	cancel1()
 
+	// Creating context with value 
+	ctx2 := context.WithValue(context.Background(), "userId", 123)
+	fmt.Println(ctx2.Value("userId"))
+
 }
