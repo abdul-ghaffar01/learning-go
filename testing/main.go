@@ -3,10 +3,12 @@ package main
 import "fmt"
 
 type User struct {
-	Name string
-	Age  int
-	City string
+	Name string		`json: "name"`
+	Age  int		`json: "age"`
+	City string		`json: "city"`
 }
+
+
 
 func addUserController(users *[]User) error {
 	fmt.Println("Adding a new user")
