@@ -1,0 +1,5 @@
+mode: set
+testingStart/add.go:4.24,6.2 1 1
+testingStart/main.go:13.45,19.2 5 0
+testingStart/main.go:21.13,26.29 4 0
+testingStart/main.go:26.29,28.3 1 0

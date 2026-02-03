@@ -16,5 +16,7 @@ Contains all the basics of `Go`.
 - Channels (buffered/unbuffered)
 - Context
 
-#### Learning is continuous, haven't completed yet
+### 3. Testing
+- Contains tests
+#### This phase is completed
 [Visit Portfolio](https://iabdulghaffar.com)
