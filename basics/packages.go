@@ -28,7 +28,7 @@ Common Packages:
 2. os
 3. net/http
 4. io
-5.time
+5. time
 6. strings
 7. sync
 8. strconv
