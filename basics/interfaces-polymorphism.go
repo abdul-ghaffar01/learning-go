@@ -63,4 +63,5 @@ func interfacesAndPolymorphism() {
 	// Implicit interface implementation
 	// A type implements an interface implicitly by having the required methods.
 
+
 }

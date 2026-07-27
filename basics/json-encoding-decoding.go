@@ -9,7 +9,7 @@ import (
 type UserData struct {
 	Name string		`json:"name"`
 	Age int			`json:"age"`
-	City string		`json: "city"`
+	City string		`json:"city"`
 }
 
 func encoding(u UserData){

@@ -108,4 +108,7 @@ func main() {
 
 	// Json encoding/decoding
 	JsonEncodingDecoding()
+
+	// Error recovery
+	ErrorRecovery()
 }
