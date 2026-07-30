@@ -107,13 +107,13 @@ func Channels() {
 	fmt.Printf("%v\n", data)
 
 	// Task 1: Convert a slice into a channel
-	Task1()
+	// Task1()
 
 	// Task 2: Do all the work in stages
 	// Stage 1: Convert slice into a channel
 	// Stage 2: Make the square of each value of channel
 	// Stage 3: Print all the squared numbers
-	Task2()
+	// Task2()
 
 	BufferedChannels()
 

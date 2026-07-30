@@ -5,8 +5,11 @@ import (
 	"time"
 )
 
-func printNumber(num int){
-	fmt.Println(num)
+func printNumber(num int) {
+	for i := range num {
+		fmt.Println(i)
+		time.Sleep(1 * time.Nanosecond)
+	}
 }
 
 func main() {
@@ -19,9 +22,9 @@ func main() {
 	time.Sleep(time.Second * 1)
 	fmt.Println("Main end")
 
-	
 	// Channels: Communication between goroutines
 	Channels()
 	Contexts()
 
+	Practice()
 }
